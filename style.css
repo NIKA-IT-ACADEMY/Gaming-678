@@ -1,11 +1,30 @@
+/* General Styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f6f4f0;
+  color: #272443;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Hepta Slab", serif;
+}
+
+/* Header Styles */
 .header {
-  height: 60px;
+  height: 50px;
+  padding-inline: 8%;
   display: flex;
   justify-content: space-between;
   background-color: #4ad72e;
@@ -18,11 +37,25 @@
 /* Navigation styles */
 
 .nav-list {
+  height: 100%;
+  padding-inline: 30px;
+  background-color: #fff;
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-radius: 0 0 16px 16px;
 }
 
 .nav-list a {
   text-decoration: none;
-  color: black;
-  font-size: 20px;
+  color: inherit;
+  font-size: 18px;
+}
+
+/* Hero styles */
+
+.hero {
+  height: calc(100vh - 50px);
+  background-image: url("bg.avif");
 }
